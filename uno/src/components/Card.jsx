@@ -26,12 +26,12 @@ const Rodape = ({numero}) => {
     );
 };
 
-const Card = () => {
+const Card = ({ numero }) => {
     return (
     <div className = "carta">
-        <Cabecalho/>
-        <Centro/>
-        <Rodape/>
+        <Cabecalho numero={numero}/>
+        <Centro numero={numero}/>
+        <Rodape numero={numero}/>
     </div>
     )
 }   
